@@ -16,8 +16,8 @@ public class GreetingController {
 
 
     @RequestMapping(method= RequestMethod.GET, path = "/greeting")
-    public String greeting() {
-        int a = addition.add(4,5);
+    public String greeting(int num1, int num2) {
+        int a = addition.add(num1, num2);
         return   "Hello World" +a ;
 
     }
